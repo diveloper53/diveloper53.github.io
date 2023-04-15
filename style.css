@@ -1,0 +1,101 @@
+* {
+    font-family: Arial;
+    color: white;
+    text-shadow: 0 0 5px white;
+    text-align: center;
+}
+
+html {
+    background: url("images/background.png");
+    background-position: center;
+    background-size: cover;
+
+    overflow-x: hidden;
+}
+
+body {
+    background: rgba(0, 0, 0, 0.5);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+.card {
+    background: black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 50px;
+    padding: 10px;
+    border-radius: 50px;
+    
+    box-shadow: 0 0 50px darkviolet;
+}
+
+.citation {
+    font-style: oblique;
+}
+
+img {
+    width: 150px;
+    border-radius: 100%;
+}
+
+hr {
+    width: 100%;
+}
+
+.social {
+    display: flex;
+    
+    height: 55px;
+}
+
+.social-icon {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    width: 50px;
+    height: 50px;
+    
+    margin: 5px;
+    
+    filter: drop-shadow(0 0 1.5px whitesmoke);
+}
+
+.social-telegram {
+    background-image: url("images/telegram.png");
+}
+
+.social-discord {
+    background-image: url("images/discord.png");
+}
+
+.social-vk {
+    background-image: url("images/vk.png");
+}
+
+.social-github {
+    background-image: url("images/github.png");
+}
+
+.thanks {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+}
+
+.thankstext {
+    color: #ffffffba;
+    text-shadow: none;
+}
