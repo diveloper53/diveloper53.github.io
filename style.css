@@ -17,6 +17,7 @@ body {
     background: rgba(0, 0, 0, 0.5);
     
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
@@ -87,12 +88,6 @@ hr {
 
 .social-github {
     background-image: url("images/github.png");
-}
-
-.thanks {
-    position: absolute;
-    left: 5px;
-    bottom: 5px;
 }
 
 .thankstext {

@@ -1,8 +1,8 @@
-# me.diveloper.ga
+# me.diveloper.lxri.org
 
 ## Что это
 
-    me.diveloper.ga является моей "визитной карточкой" если можно так выразиться.
+    me.diveloper.lxri.org является моей "визитной карточкой" если можно так выразиться.
 
     *Вдохновлено me.sashatalk.ml...*
 
