@@ -20,15 +20,15 @@ body {
     transform-origin: center;
     background: linear-gradient(
         to bottom,
-        #000,
-        #000 var(--area),
-        #ccc var(--area),
-        #ccc
+        #503B0080,
+        #503B0080 var(--area),
+        #408F1180 var(--area),
+        #408F1180
     );
     background-color: black;
     background-size: 100% var(--height);
     background-position-y: 0px;
-    opacity: 50%;
+    opacity: 75%;
 }
 
 @keyframes scan {
