@@ -8,8 +8,8 @@
 }
 
 .c1 {
-    animation: print 0.2s forwards;
-    opacity: 0;
+    /*animation: print 0s forwards;*/
+    opacity: 1;
 }
 
 .tw1 {
