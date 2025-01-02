@@ -1,4 +1,4 @@
-/* Typing and effect taken from https://css-tricks.com/snippets/css/typewriter-effect/ */
+/* Typing effect taken from https://css-tricks.com/snippets/css/typewriter-effect/ */
 
 .typewriter {
     animation-fill-mode: forwards;
@@ -8,12 +8,13 @@
 }
 
 .c1 {
-    /*animation: print 0s forwards;*/
-    opacity: 1;
+    animation: print 0.2s forwards;
+    display: inline-flex;
+    opacity: 0;
 }
 
 .tw1 {
-    animation: 5s typing 1s steps(100, end) forwards;
+    animation: 2s typing 1s steps(40, end) forwards;
 }
 
 .neofetch-logo {
@@ -73,11 +74,12 @@
 
 .c2 {
     animation: print 4.5s forwards;
+    display: inline-flex;
     opacity: 0;
 }
 
 .tw2 {
-    animation: 5s typing 6s steps(100, end) forwards;
+    animation: 2s typing 6s steps(40, end) forwards;
 }
 
 .links-root-dir :nth-child(1) {
