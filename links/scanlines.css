@@ -1,0 +1,41 @@
+/* Taken from https://github.com/R3V1Z3/scanlines */
+
+:root {
+    --repeat: 0.1s; /* animation timing */
+    --height: 6px; /* total pixel height from scanline top to bottom of animation */
+    --area: 70%; /* percentage of height the scanline covers */
+}
+body {
+    background-color: #fcfcfc;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.outer {
+    animation: scan var(--repeat) linear infinite;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform-origin: center;
+    background: linear-gradient(
+        to bottom,
+        #000,
+        #000 var(--area),
+        #ccc var(--area),
+        #ccc
+    );
+    background-color: black;
+    background-size: 100% var(--height);
+    background-position-y: 0px;
+    opacity: 50%;
+}
+
+@keyframes scan {
+    0% {
+        background-position-y: 0px;
+    }
+    100% {
+        background-position-y: var(--height);
+    }
+}
