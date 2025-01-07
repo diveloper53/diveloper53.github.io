@@ -8,10 +8,10 @@ body {
 }
 
 .terminal {
-    font-size: 125%;
+    font-size: 150%;
     font-family: monospace;
     white-space: nowrap;
-    letter-spacing: 0.1em;
+    letter-spacing: 0;
     line-height: 1.4;
 
     padding: 2%;
