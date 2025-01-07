@@ -1,0 +1,21 @@
+.white-text {
+    color: #ffffff;
+}
+
+.red-text {
+    color: #ed1515;
+}
+
+.green-text {
+    color: #15ff00;
+}
+
+.blue-text {
+    color: #3daee9;
+}
+
+:root {
+    --red-text: #ed1515;
+    --green-text: #15ff00;
+    --blue-text: #3daee9;
+}

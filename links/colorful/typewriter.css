@@ -1,0 +1,165 @@
+/* Typing effect taken from https://css-tricks.com/snippets/css/typewriter-effect/ */
+
+.typewriter {
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    display: inline-flex;
+    width: 0;
+}
+
+.c1 {
+    animation: print 0.2s forwards;
+    display: inline-flex;
+    opacity: 0;
+}
+
+.tw1 {
+    animation: 2s typing 1s steps(40, end) forwards;
+}
+
+.neofetch-logo {
+    animation: print 2s forwards;
+    opacity: 0;
+}
+
+.neofetch-text > :nth-child(1) {
+    animation: print 2.2s forwards;
+    opacity: 0;
+}
+
+.neofetch-text > :nth-child(2) {
+    animation: print 2.4s forwards;
+    opacity: 0;
+}
+
+.neofetch-text > :nth-child(3) {
+    animation: print 2.6s forwards;
+    opacity: 0;
+}
+
+.neofetch-text > :nth-child(4) {
+    animation: print 2.8s forwards;
+    opacity: 0;
+}
+
+.neofetch-text > :nth-child(5) {
+    animation: print 3.0s forwards;
+    opacity: 0;
+}
+
+.neofetch-text > :nth-child(6) {
+    animation: print 3.2s forwards;
+    opacity: 0;
+}
+
+.neofetch-text > :nth-child(7) {
+    animation: print 3.4s forwards;
+    opacity: 0;
+}
+
+.neofetch-text > :nth-child(8) {
+    animation: print 3.6s forwards;
+    opacity: 0;
+}
+
+.neofetch-text > :nth-child(9) {
+    animation: print 3.8s forwards;
+    opacity: 0;
+}
+
+.neofetch-text > :nth-child(10) {
+    animation: print 4.0s forwards;
+    opacity: 0;
+}
+
+.c2 {
+    animation: print 4.5s forwards;
+    display: inline-flex;
+    opacity: 0;
+}
+
+.tw2 {
+    animation: 2s typing 6s steps(40, end) forwards;
+}
+
+.links-root-dir > :nth-child(1) {
+    animation: print 7.2s forwards;
+    opacity: 0;
+}
+
+.links-root-dir > :nth-child(2) {
+    animation: print 7.4s forwards;
+    opacity: 0;
+}
+
+.links-root-dir > :nth-child(3) {
+    animation: print 7.6s forwards;
+    opacity: 0;
+}
+
+.links-root-dir > :nth-child(4) {
+    animation: print 7.8s forwards;
+    opacity: 0;
+}
+
+.links-root-dir > :nth-child(5) {
+    animation: print 8.0s forwards;
+    opacity: 0;
+}
+
+.links-root-dir > :nth-child(6) {
+    animation: print 8.2s forwards;
+    opacity: 0;
+}
+
+.links-root-dir > :nth-child(7) {
+    animation: print 8.4s forwards;
+    opacity: 0;
+}
+
+.links-root-dir > :nth-child(8) {
+    animation: print 8.6s forwards;
+    opacity: 0;
+}
+
+.links-root-dir > :nth-child(9) {
+    animation: print 8.8s forwards;
+    opacity: 0;
+}
+
+.links-root-dir > :nth-child(10) {
+    animation: print 9.0s forwards;
+    opacity: 0;
+}
+
+@keyframes print {
+    0% {
+        opacity: 0;
+    }
+    99% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* @keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: orange;
+    }
+} */
