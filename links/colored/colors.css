@@ -10,8 +10,12 @@
     color: #15ff00;
 }
 
-.blue-text {
+.darkblue-text {
     color: #3daee9;
+}
+
+.blue-text {
+    color: #00ffff;
 }
 
 :root {

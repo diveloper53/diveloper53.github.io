@@ -81,3 +81,9 @@ a:visited {
     font-size: 150%;
     margin-right: 5px;
 }
+
+/* Specially for w3m and lynx users */
+
+.no-css {
+    display: none;
+}

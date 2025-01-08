@@ -1,5 +1,5 @@
 :root {
-    background-color: #003b00;
+    background-color: black;
 }
 
 body {
@@ -49,7 +49,7 @@ body {
     color: white;
 }
 
-a {
+/* a {
     color: white;
 }
 
@@ -59,7 +59,7 @@ a:link {
 
 a:visited {
     color: white;
-}
+} */
 
 .links-dir a {
     text-decoration: none;
@@ -82,4 +82,10 @@ a:visited {
     color: white;
     font-size: 150%;
     /* margin-right: 5px; */
+}
+
+/* Specially for w3m and lynx users */
+
+.no-css {
+    display: none;
 }

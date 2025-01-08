@@ -22,7 +22,7 @@ body {
     justify-content: center;
 
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
 
     margin: 0px;
     padding: 0px;
@@ -35,7 +35,7 @@ body {
     flex-direction: column;
     align-items: center;
 
-    margin: 50px;
+    margin: 50px 0;
     padding: 10px;
     border-radius: 50px;
     
@@ -76,6 +76,8 @@ p {
     margin: 5px;
     
     filter: drop-shadow(0 0 1.5px whitesmoke);
+
+    font-size: 0;
 }
 
 .social-telegram {
@@ -109,4 +111,10 @@ p {
 }
 .divlinks-title {
     font-size: 125%;
+}
+
+/* Specially for w3m and lynx users */
+
+.no-css {
+    display: none;
 }
