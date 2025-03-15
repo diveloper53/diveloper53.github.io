@@ -1,5 +1,5 @@
 :root {
-    background-color: #003b00;
+    background-color: black;
 }
 
 body {
@@ -11,7 +11,8 @@ body {
     font-size: 150%;
     font-family: monospace;
     white-space: nowrap;
-    letter-spacing: 0.1em;
+    letter-spacing: 0;
+    line-height: 1.4;
 
     padding: 2%;
 
@@ -36,7 +37,8 @@ body {
 }
 
 .neofetch-text {
-    margin-left: 25px;
+    /* margin-left: 15px; */
+    list-style: none;
 }
 
 .vertical-text {
@@ -75,11 +77,11 @@ a:visited {
     text-decoration: underline;
 }
 
-.links-dir span::before {
-    content: '➢';
+.links-dir li::marker {
+    content: '➢ ';
     color: white;
     font-size: 150%;
-    margin-right: 10px;
+    /* margin-right: 5px; */
 }
 
 /* Specially for w3m and lynx users */
