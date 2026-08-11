@@ -1,45 +1,57 @@
 * {
     font-family: Arial;
-    color: white;
-    text-shadow: 0 0 5px white;
+    color: #1e293b;
+    text-shadow: 0 0 5px #72cbff;
     text-align: center;
 }
 
 html {
-    background: url("images/background.png");
-    background-position: center;
-    background-size: cover;
-
     overflow-x: hidden;
 }
 
 body {
-    background: rgba(0, 0, 0, 0.5);
-    
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    background: url("images/background.jpg");
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.card-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    width: 100vw;
+    min-width: 50%;
     min-height: 100vh;
-
-    margin: 0px;
-    padding: 0px;
+    padding-bottom: 10vh;
 }
 
 .card {
-    background: black;
+    /*background: #65eebe;*/
+    background: #ffffff;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    margin: 50px 0;
+    margin: 2% 5%;
     padding: 10px;
     border-radius: 50px;
     
-    box-shadow: 0 0 50px darkviolet;
+    box-shadow: 0 0 50px #72cbff;
 }
 
 .citation {
@@ -47,7 +59,7 @@ body {
 }
 
 img {
-    width: 150px;
+    width: 250px;
     border-radius: 100%;
 }
 
@@ -75,25 +87,26 @@ p {
     
     margin: 5px;
     
-    filter: drop-shadow(0 0 1.5px whitesmoke);
+    filter: drop-shadow(0 0 1.5px #0f172a);
 
     font-size: 0;
+    filter: invert(1) opacity(0.85);
 }
 
 .social-telegram {
-    background-image: url("images/telegram.png");
+    background-image: url("../images/telegram.png");
 }
 
 .social-discord {
-    background-image: url("images/discord.png");
+    background-image: url("../images/discord.png");
 }
 
 .social-vk {
-    background-image: url("images/vk.png");
+    background-image: url("../images/vk.png");
 }
 
 .social-github {
-    background-image: url("images/github.png");
+    background-image: url("../images/github.png");
 }
 
 .thankstext {
@@ -103,34 +116,29 @@ p {
 
 /* DivLinks */
 .divlinks {
-    background: rgba(123, 0, 175, 0.9);
-    border: 1px solid darkviolet;
+    background: #c5f7e5;
+    border: 1px solid #578675;
     padding: 5px;
-    box-shadow: 0 0 7px darkviolet;
+    box-shadow: 0 0 7px #417a65;
     border-radius: 7px;
 }
 .divlinks-title {
     font-size: 125%;
 }
 
-header {
-    display: flex;
-    width: 90%;
-    justify-content: flex-end;
-}
-
 .theme-switcher {
     width: 100px;
     height: 50px;
 
-    background-color: black;
+    background-color: #c5f7e5;
+    border: 1px solid #8dc2ae;
     border-radius: 30px;
-    box-shadow: 0 0 5px darkviolet;
+    box-shadow: 0 0 15px #72cbff;
     cursor: pointer;
 
     position: absolute;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
 
     right: 3%;
     top: 5%;
@@ -139,13 +147,20 @@ header {
 .theme-switcher-knob {
     width: 44px;
     height: 44px;
-    background: rgba(123, 0, 175, 0.9);
-    border: 1px solid darkviolet;
+    background: #c5f7e5;
+    border: 1px solid #578675;
     margin: 2px;
-    box-shadow: 0 0 7px darkviolet;
+    box-shadow: 0 0 7px #417a65;
     border-radius: 100%;
 
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Easter Egg Section */
+
+.easter-egg {
+    width: 100vw;
+    height: 100vh;
 }
