@@ -1,7 +1,7 @@
 * {
     font-family: Arial;
-    color: #1e293b;
-    text-shadow: 0 0 5px #72cbff;
+    color: #ffffffb2;
+    text-shadow: 0 0 5px #88c1e2;
     text-align: center;
 }
 
@@ -20,12 +20,59 @@ main {
     background-size: cover;
 
     display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: start;
 
     width: 100vw;
     min-height: 100vh;
+}
+
+.window-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    user-select: none;
+}
+
+.window-title {
+    margin-left: 10px;
+}
+
+.window-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.window-button {
+    width: 35px;
+    height: 25px;
+
+    background: #ffffff1a;
+    border: 1px solid #ffffff17;
+    border-top: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 120%;
+}
+
+.window-buttons > :nth-child(1) {
+    border-radius:  0 0 0 7px;
+}
+
+.window-buttons > :last-child {
+    background: #ff5b5b3f;
+    border-radius:  0 13px 0 0;
 }
 
 .card-container {
@@ -36,21 +83,36 @@ main {
 
     min-width: 50%;
     min-height: 100vh;
-    padding-bottom: 10vh;
 }
 
-.card {
-    background: #ffffff;
+.window {
+    background: url("images/aero.png");
+    background-position: center;
+    background-size: cover;
+
+    backdrop-filter: blur(7px);
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    margin: 2% 5%;
-    padding: 10px;
-    border-radius: 50px;
+    border-radius: 14px;
+    border: #ffffff3d 1px solid;
     
-    box-shadow: 0 0 50px #72cbff;
+    box-shadow: 0 0 20px #1f2a308a;
+}
+
+.card {
+    margin: 2% 5%;
+}
+
+.video {
+    margin-bottom: 7%;
+}
+
+.card > * {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .citation {
@@ -58,7 +120,7 @@ main {
 }
 
 img {
-    width: 250px;
+    width: 150px;
     border-radius: 100%;
 }
 
@@ -74,6 +136,7 @@ p {
     display: flex;
     
     height: 55px;
+    margin-bottom: 10px;
 }
 
 .social-icon {
@@ -87,7 +150,7 @@ p {
     margin: 5px;
     
     font-size: 0;
-    filter: invert(1) opacity(0.85);
+    filter: opacity(0.75);
 }
 
 .social-telegram {
@@ -127,15 +190,21 @@ p {
     width: 120px;
     height: 50px;
 
-    background-color: #c5f7e5;
-    border: 1px solid #8dc2ae;
+    background: url("images/aero.png");
+    background-position: center;
+    background-size: cover;
+
+    backdrop-filter: blur(7px);
+    border: #ffffff3d 1px solid;
+    box-shadow: 0 0 7px #1f2a308a;
+
     border-radius: 30px;
-    box-shadow: 0 0 15px #72cbff;
+
     cursor: pointer;
 
     position: absolute;
     display: flex;
-    flex-direction: row;
+    flex-direction: reverse;
 
     right: 3%;
     top: 5%;
@@ -144,12 +213,18 @@ p {
 }
 
 .theme-switcher-knob {
+    background: #79b4e488;
+    background-position: center;
+    background-size: cover;
+
+    backdrop-filter: blur(7px);
+    border: #ffffff3d 1px solid;
+    box-shadow: 0 0 7px #1f2a308a;
+
     width: 44px;
     height: 44px;
-    background: #c5f7e5;
-    border: 1px solid #578675;
+
     margin: 2px;
-    box-shadow: 0 0 7px #417a65;
     border-radius: 100%;
 
     display: flex;
@@ -159,18 +234,6 @@ p {
 
 .theme-switcher-hidden {
     border-radius: 100%;
-    width: 50px;
-    height: 50px;
-}
-
-.theme-switcher-hidden-aero {
-    width: 20px;
+    width: 35px;
     height: 44px;
-}
-
-/* Easter Egg Section */
-
-.easter-egg {
-    width: 100vw;
-    height: 100vh;
 }

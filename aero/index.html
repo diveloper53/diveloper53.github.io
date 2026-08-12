@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Обо мне - Diveloper53.github.io</title>
+        <meta name="title" content="Обо мне - Diveloper53.github.io" />
+        <meta name="description" content="// Своеобразная визитная карточка" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <div  class="theme-switcher">
+            <a href=".." class="theme-switcher-hidden">[Темная тема]</a>
+            <span class="theme-switcher-knob">
+                [Тема Aero]
+                <svg xmlns="http://w3.org" viewBox="0 0 24 24" width="50" height="50" fill="none">
+                    <defs>
+                        <!-- Градиенты для капли воды -->
+                        <linearGradient id="mergedDrop" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.6"/>
+                            <stop offset="40%" stop-color="#7dd3fc" stop-opacity="0.1"/>
+                            <stop offset="100%" stop-color="#0284c7" stop-opacity="0.4"/>
+                        </linearGradient>
+                        <linearGradient id="mergedDropEdge" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
+                            <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.3"/>
+                        </linearGradient>
+
+                        <!-- Градиент для зеленого листка внутри -->
+                        <linearGradient id="mergedLeaf" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#4ade80" stop-opacity="0.5"/>
+                            <stop offset="100%" stop-color="#16a34a" stop-opacity="0.8"/>
+                        </linearGradient>
+                    </defs>
+
+                    <!-- 1. Задняя стенка и объем капли воды -->
+                    <circle cx="12" cy="12" r="9.5" fill="url(#mergedDrop)" stroke="url(#mergedDropEdge)" stroke-width="1.2" />
+
+                    <!-- 2. Листок (еще немного уменьшен и отцентрован) -->
+                    <g transform="matrix(0.58 0 0 0.58 5.1 5.1)">
+                        <!-- Базовый лист -->
+                        <path d="M 3 21 C 2 13 6 6 13 4 C 18 2.5 22 2 22 2 C 22 2 21 6 19.5 11 C 17.5 18 11 22 3 21 Z" fill="url(#mergedLeaf)" />
+                        <!-- Верхний глянцевый полукруглый блик листа -->
+                        <path d="M 3 21 C 6 14 12 10 22 2 C 22 2 21 6 19.5 11 C 17.5 18 11 22 3 21 Z" fill="#ffffff" fill-opacity="0.4" />
+                        <!-- Прожилка листа -->
+                        <path d="M 3.5 20.5 Q 8 15 14.5 10.5" stroke="#ffffff" stroke-dasharray="0.3 0.2" stroke-width="1.2" stroke-linecap="round" stroke-opacity="0.7" />
+                        <!-- Маленькая капелька росы на самом листке -->
+                        <circle cx="11" cy="15" r="1.8" fill="#ffffff" fill-opacity="0.8" />
+                    </g>
+
+                    <!-- 3. Переднее стекло большой капли (блики поверх листа) -->
+                    <!-- Верхний серповидный блик -->
+                    <path d="M 4.5 9.5 A 8 8 0 0 1 17.5 4.5 A 9.5 9.5 0 0 0 4.5 9.5 Z" fill="#ffffff" opacity="0.55" />
+                    <!-- Маленький концентрированный точечный блик -->
+                    <circle cx="7.5" cy="7.5" r="0.8" fill="#ffffff" />
+                </svg>
+            </span>
+            <a href="../light" class="theme-switcher-hidden">[Светлая тема]</a>
+        </div>
+        <main>
+            <div class="card-container">
+                <div class="card window">
+                    <!-- Окно -->
+                    <div class="window-header">
+                        <span class="window-title">Diveloper53.bin Properties</span>
+                        <div class="window-buttons">
+                            <div class="window-button window-button-minimize">&minus;</div>
+                            <div class="window-button window-button-fullscreen">&EmptySmallSquare;</div>
+                            <div class="window-button window-button-close">&Cross;</div>
+                        </div>
+                    </div>
+                    <!--Профиль-->
+                    <img src="images/avatars/45.jpg" alt="Diveloper's avatar" />
+                    <h1>Diveloper</h1>
+                    <span class="citation">
+                        Все мечтают дотронуться до облаков, но все боятся упасть.
+                    </span>
+                    <hr />
+                    <!--Текст-->
+                    <p>
+                        Работаю с фронтендом и бэкендом,<br/>
+                        иногда занимаюсь геймдевом.<br/>
+                        <br/>
+                        Языки: HTML, CSS, JS, PHP, Python, C, C# и др.<br/>
+                        Фреймворки: jQuery, Bootstrap, Tailwind CSS, NextJS и др.<br/>
+                    </p>
+                    <!-- <div class="divlinks">
+                        <p>
+                            <span class="divlinks-title">Советую глянуть: <a href="links" target="_blank">DivLinks</a></span><br/>
+                            Сборник ссылок на мои проекты с прикольной анимацией без JS.
+                        </p>
+                    </div> -->
+                    <p>
+                        Также, вы можете посетить мой <a href="https://github.com/diveloper53" target="_blank">гитхаб</a>.
+                    </p>
+                    <hr />
+                    <!--Соц сети-->
+                    <div class="social">
+                        <a class="social-icon social-telegram" href="https://t.me/diveloper" target="_blank">Telegram</a>
+                        <a class="social-icon social-discord" href="https://discord.gg/gVpcwPsNYD" target="_blank">Discord Server</a>
+                        <a class="social-icon social-vk" href="https://vk.com/diveloper53" target="_blank">VK</a>
+                        <a class="social-icon social-github" href="https://github.com/diveloper53" target="_blank">GitHub</a>
+                    </div>
+                </div>
+                <!-- Спасибо -->
+                <span class="thanks thankstext">
+                    ~
+                    Вдохновлено
+                    <a class="thankstext" href="https://github.com/SashaTalk/sashatalk.github.io" target="_blank">sashatalk.github.io</a>
+                    ~
+                </span>
+            </div>
+            <div class="video window">
+                    <!-- Окно -->
+                    <div class="window-header">
+                        <span class="window-title">Favorite Music - Windows Internet Explorer 7</span>
+                        <div class="window-buttons">
+                            <div class="window-button window-button-minimize">&minus;</div>
+                            <div class="window-button window-button-fullscreen">&EmptySmallSquare;</div>
+                            <div class="window-button window-button-close">&Cross;</div>
+                        </div>
+                    </div>
+                    <iframe width="557" height="418" src="https://www.youtube.com/embed/3z8y7enYB30" title="Aiobahn feat. 長瀬有花 - 宙でおやすみ (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </main>
+    </body>
+</html>

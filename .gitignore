@@ -397,6 +397,6 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 
-# My project
-light/images/avatars
-light/images/avatars/*
+# My Project
+aero/images/avatars/*
+!aero/images/avatars/45.jpg
