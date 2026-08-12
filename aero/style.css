@@ -176,10 +176,15 @@ p {
 
 /* DivLinks */
 .divlinks {
-    background: #c5f7e5;
-    border: 1px solid #578675;
+    background: #79d4e488;
+    background-position: center;
+    background-size: cover;
+
+    backdrop-filter: blur(7px);
+    border: #ffffff3d 1px solid;
+    box-shadow: 0 0 7px #1f2a308a;
+
     padding: 5px;
-    box-shadow: 0 0 7px #417a65;
     border-radius: 7px;
 }
 .divlinks-title {
