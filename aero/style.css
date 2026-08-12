@@ -41,6 +41,9 @@ main {
 
 .window-title {
     margin-left: 10px;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    overflow: hidden;
 }
 
 .window-buttons {
@@ -98,6 +101,8 @@ main {
 
     border-radius: 14px;
     border: #ffffff3d 1px solid;
+
+    max-width: 100vw;
     
     box-shadow: 0 0 20px #1f2a308a;
 }
@@ -108,6 +113,32 @@ main {
 
 .video {
     margin-bottom: 7%;
+}
+
+.video > iframe {
+    width: 557px;
+    height: 418px;
+}
+
+@media (max-width: 565px) {
+    main {
+        align-items: center;
+        justify-content: start;
+    }
+
+    .card-container {
+        min-width: 100%;
+    }
+
+    .card {
+        margin: 2% 0;
+    }
+
+    .video > iframe {
+        /* margin: 2% 0%; */
+        width: 100vw;
+        height: calc(100vw * 3 / 4);
+    }
 }
 
 .card > * {
@@ -215,6 +246,7 @@ p {
     top: 5%;
 
     font-size: 0;
+    z-index: 99;
 }
 
 .theme-switcher-knob {
