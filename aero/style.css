@@ -113,6 +113,8 @@ main {
 
 .video {
     margin-bottom: 7%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .video > iframe {
